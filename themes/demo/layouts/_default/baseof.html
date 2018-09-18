@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    
+    {{- partial "head.html" . -}}
+    
+    <body>
+        {{- partial "header.html" . -}}
+        
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+        
+        {{- partial "footer.html" . -}}
+
+        {{ $js := resources.Get "js/index.js" | minify }}
+        <!-- Add the JS link here --> 
+    </body>
+
+</html>

@@ -1,0 +1,13 @@
+<title>Hugo demo site</title>
+
+<!-- Let Hugo compile your SCSS -->
+{{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+
+<link href="/favicon.png" rel="shortcut icon">
+
+{{- with .Description -}}
+    
+    <meta name="description" content="{{ . }}">
+
+{{- end -}}

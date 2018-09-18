@@ -1,0 +1,14 @@
+<!-- Een pagina heeft resources die je kan matchen -->
+{{- $originalImage := .Page.Resources.GetMatch (printf "%s*" (.Get "src")) -}}
+
+<!-- En er vervolgens iets mee doen -->
+{{- $image := $originalImage.Resize "400x q80" -}}
+
+<img src="{{ $image.RelPermalink }}">
+
+<!-- Hier kijken we of we het caption argument hebben -->
+{{- with (.Get "caption") -}}
+
+    <br /><small><i>{{ . }}</i></small>
+
+{{- end -}}

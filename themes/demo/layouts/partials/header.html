@@ -1,0 +1,21 @@
+<h2>Hugo Demo Site</h2>
+
+<ul>
+    
+    {{- range .Site.Menus.main -}}
+        
+        {{- if ($.IsMenuCurrent "main" .) -}}    
+            
+            <li><strong><a href="{{ .URL }}">{{ .Name }}</a></strong></li>
+
+        {{- else -}}
+            
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            
+        {{- end -}}
+
+    {{- end -}}
+    
+</ul>
+
+<hr/>

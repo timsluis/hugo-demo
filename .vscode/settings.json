@@ -1,0 +1,58 @@
+{
+    "files.associations": {
+        ".html": "gohtml"
+    },
+    "highlight.regexes": {
+        "({{.*?)(\".*?\")([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?": [{},
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }
+        ],
+        "({{% (?:/?block|/?header|/?content).+?%}})": [{
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF"
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            }
+        ],
+        "({{% .+?%}})": [{
+                "filterLanguageRegex": "markdown",
+                "color": "#808690",
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF"
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            }
+        ],
+        "({{<.+?>}})": [{
+            "filterLanguageRegex": "markdown",
+            "color": "#C678DD",
+        }],
+        "(// )(@\\w+)": [{},
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#4de0ff"
+            }
+        ]
+    }
+}

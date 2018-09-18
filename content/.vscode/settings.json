@@ -1,0 +1,106 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.insertSpaces": true,
+    "workbench.statusBar.feedback.visible": false,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "workbench.startupEditor": "none",
+    "explorer.autoReveal": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules/": true,
+        "build/": true,
+        "coverage/": true,
+        ".vscode": true
+    },
+    "window.zoomLevel": 0,
+    "explorer.openEditors.visible": 0,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'Apple Color Emoji'",
+    "workbench.activityBar.visible": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.folding": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.codeLens": false,
+    "editor.dragAndDrop": false,
+    "editor.lightbulb.enabled": false,
+    "editor.lineHeight": 22,
+    "editor.wordBasedSuggestions": false,
+    "editor.suggestOnTriggerCharacters": true,
+    "workbench.statusBar.visible": true,
+    "window.title": "${activeEditorShort}${separator}Qbit.nl",
+    "problems.autoReveal": false,
+    "problems.decorations.enabled": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableCommitSigning": false,
+    "git.enableSmartCommit": true,
+    "editor.tabCompletion": true,
+    "markdown.extension.print.absoluteImgPath": false,
+    "editor.snippetSuggestions": "top",
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": true
+    },
+    "editor.quickSuggestionsDelay": 500,
+    "highlight.regexes": {
+        "({{.*?)(\".*?\")([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?": [{},
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }, {}, {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF",
+            }
+        ],
+        "({{% (?:/?block|/?header|/?content).+?%}})": [{
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF"
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            }
+        ],
+        "({{% .+?%}})": [{
+                "filterLanguageRegex": "markdown",
+                "color": "#808690",
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#61AFEF"
+            },
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#5C6370",
+            }
+        ],
+        "({{<.+?>}})": [{
+            "filterLanguageRegex": "markdown",
+            "color": "#C678DD",
+        }],
+        "(// )(@\\w+)": [{},
+            {
+                "filterLanguageRegex": "markdown",
+                "color": "#4de0ff"
+            }
+        ]
+    }
+}

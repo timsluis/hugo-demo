@@ -1,0 +1,15 @@
+{{ define "main" }}
+    <!-- Blog heeft een aparte single page met eigen elementen -->
+    <p>
+        <a href='/blog'>← Terug naar de blog</a>
+    </p>
+
+    <!-- Categorien uitlezen -->
+    <p>Categorie: {{ delimit .Params.categories ',' }}</p>
+
+    <!-- Datum uitlezen -->
+    <p>Datum: {{ dateFormat "Monday, 2 January 2006" .Params.date }}</p>
+    
+    <!-- Template voor alle single pages (_index.md) -->
+    {{ .Content }}
+{{ end }}
