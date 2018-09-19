@@ -10,3 +10,5 @@ weight: 30
 # Contact
 
 Neem contact met me op als je meer wilt weten via het onderstaande formulier.
+
+{{< contactform >}}
