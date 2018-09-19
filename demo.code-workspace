@@ -1,0 +1,90 @@
+{
+	"folders": [
+		{
+			"path": "content"
+		}
+  ],
+  "settings": {
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.startupEditor": "none",
+    "explorer.autoReveal": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0,
+    "explorer.openEditors.visible": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "window.title": "${activeEditorShort}${separator}Qbit.nl",
+    "problems.autoReveal": false,
+    "problems.decorations.enabled": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "editor.tabCompletion": true,
+    "highlight.regexes": {
+      "({{.*?)(\".*?\")([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?([^\"|}]*)(?:(\".*?\"))?": [
+        {},
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        },
+        {},
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        },
+        {},
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        },
+        {},
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        }
+      ],
+      "({{% (?:/?block|/?header|/?content).+?%}})": [
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#5C6370"
+        },
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        },
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#5C6370"
+        }
+      ],
+      "({{% .+?%}})": [
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#808690"
+        },
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#61AFEF"
+        },
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#5C6370"
+        }
+      ],
+      "({{<.+?>}})": [
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#C678DD"
+        }
+      ],
+      "(// )(@\\w+)": [
+        {},
+        {
+          "filterLanguageRegex": "markdown",
+          "color": "#4de0ff"
+        }
+      ]
+    }
+  }
+}
