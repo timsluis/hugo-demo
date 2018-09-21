@@ -1,7 +1,7 @@
 ---
 title: Contact
 date: 2018-09-17T21:30:15+02:00
-draft: true
+draft: false
 menu: main
 url: /my/crazy/url
 weight: 30

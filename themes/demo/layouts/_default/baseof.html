@@ -13,13 +13,6 @@
         
         {{- partial "footer.html" . -}}
 
-        <!-- Get JS -->
-        {{- $index := resources.Get "js/index.js" | minify | fingerprint -}}
-        {{- $jquery := resources.Get "js/jquery-3.3.1.js" | minify | fingerprint -}}
-        
-        <!-- Bundle the JS -->
-        <script type="text/javascript" src="{{ $jquery.Permalink }}"></script>
-        <script type="text/javascript" src="{{ $index.Permalink }}"></script>
     </body>
 
 </html>
